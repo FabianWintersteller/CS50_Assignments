@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+
+            // TODO: Add code to check answers to question
+
+            //Check multiple choice response
+            function moog()
+            {
+                document.getElementById("moog").style.backgroundColor = "red";
+                document.getElementById("korg").style.backgroundColor = "#d9edff";
+                document.getElementById("serge").style.backgroundColor = "#d9edff";
+                corr_multi.innerText = "Incorrect"
+            }
+
+            function korg()
+            {
+                document.getElementById("korg").style.backgroundColor = "red";
+                document.getElementById("moog").style.backgroundColor = "#d9edff";
+                document.getElementById("serge").style.backgroundColor = "#d9edff";
+                corr_multi.innerText = "Incorrect"
+            }
+
+            function serge()
+            {
+                document.getElementById("serge").style.backgroundColor = "green";
+                document.getElementById("korg").style.backgroundColor = "#d9edff";
+                document.getElementById("moog").style.backgroundColor = "#d9edff";
+                corr_multi.innerText = "Correct!"
+            }
+
+            // Check single response
+            function check_response()
+            {
+                let answer = document.querySelector("#response").value;
+
+                if( answer == "Buchla")
+                {
+                    response.style.backgroundColor = "green";
+                    response.value = answer;
+                    response.style.color = "white";
+                    corr_single.innerText = "Correct!"
+                }
+
+                else
+                {
+                    response.style.backgroundColor = "red";
+                    response.value = answer;
+                    response.style.color = "white";
+                    corr_single.innerText = "Incorrect"
+                }
+            }
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+                <!-- TODO: Add multiple choice question here -->
+                <h3>
+                    Which Synthesizer is following the West Coast engineering style?
+                </h3>
+
+                <p id="corr_multi"></p>
+
+                <button id = "moog" onclick = "moog();">Minimoog</button>
+                <button id = "serge"  onclick = "serge();">Serge Modular Superbooth 18</button>
+                <button id = "korg" onclick = "korg();">Korg MS-20</button>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <!-- TODO: Add free response question here -->
+                <h3>
+                    What is the oldest brand of West Coast style Synthesizers?
+                </h3>
+
+                <p id="corr_single"></p>
+
+                <form onsubmit = "check_response(); return false;">
+                    <input id="response" autocomplete = "off" placeholder = "Answer.." type = "text">
+                    <input type="submit" value="Confirm">
+                </form>
+
+            </div>
+
+        </div>
+    </body>
+</html>

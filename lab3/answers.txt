@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: The sorted data iterates the quickest (O(n)) and reversed the slowest (O(n^2))
+
+sort2 uses: merge sort
+
+How do you know?: all data sets are sorted approximately at the same time (O(n log n)), but still faster than sort3 (O(n^2))
+
+sort3 uses: selection sort
+
+How do you know?: all data sets are sorted approximately at the same time (O(n^2)), but slower than sort3 (O(n log n))
