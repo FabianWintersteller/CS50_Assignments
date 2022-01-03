@@ -1,0 +1,169 @@
+body {
+    background-color: #7395AE;
+}
+
+h1 {
+    position: absolute;
+    width: 150%;
+    text-align: center;
+    font-size: 75px;
+    font-family: Garamond, serif;
+    font-weight: 100;
+    color: white;
+    top: 10%;
+}
+
+h3 {
+    position: absolute;
+    width: 150%;
+    text-align: center;
+    font-size: 35px;
+    font-family: Garamond, serif;
+    font-weight: 100;
+    font-style: italic;
+    color: white;
+    top: 22%;
+}
+
+.left_desc {
+    position: absolute;
+    width: 100%;
+    font-size: 30px;
+    font-family: 'Courier New', monospace;
+    font-weight: 100;
+    color: white;
+    top: 25%;
+    left: 200px;
+}
+
+.center_desc {
+    position: absolute;
+    width: 100%;
+    font-size: 30px;
+    font-family: 'Courier New', monospace;
+    font-weight: 100;
+    color: white;
+    top: 25%;
+    left: 580px;
+}
+
+.right_desc {
+    position: absolute;
+    width: 100%;
+    font-size: 30px;
+    font-family: 'Courier New', monospace;
+    font-weight: 100;
+    color: white;
+    top: 25%;
+    left: 975px;
+}
+
+.adj {
+    position: absolute;
+    width: 150%;
+    text-align: center;
+    font-size: 40px;
+    font-family: Garamond, serif;
+    font-weight: 100;
+    font-style: italic;
+    color: white;
+    top: 50%;
+}
+
+.about_text {
+    position: absolute;
+    left: 850px;
+    width: 38%;
+    text-align: center;
+    font-size: 20px;
+    font-family: Garamond, serif;
+    font-weight: 200;
+    font-style: italic;
+    color: white;
+    top: 50%;
+}
+
+.profile_pic {
+    width: 720px;
+    height: 720px;
+    position: absolute;
+    top:53px;
+}
+
+.frame_pic {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 980px;
+    top: 300px;
+}
+
+.videos {
+    top: 300px;
+    width: 100%;
+    position: absolute;
+    left: 110px;
+}
+
+.yakata_video {
+    top: 1000px;
+    left: 100px;
+}
+
+.romc_video {
+    top: 1000px;
+    left: 500px;
+}
+
+.mynth_video {
+    top: 1000px;
+    right: 100px;
+}
+
+.nav {
+    font-family: 'Courier New', monospace;
+    font-weight: 100;
+    color: white;
+    background-color: #5D5261;
+    overflow: hidden;
+}
+
+.nav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav a:hover {
+  background-color: white;
+  color: #5D5261;
+}
+
+.nav active {
+  background-color: #557A95;
+  color: white;
+}
+
+.bottom {
+    font-family: 'Courier New', monospace;
+    font-weight: 100;
+    color: white;
+    background-color: #5D5261;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
+
+.bottom p {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 22px 0px 6px 0px;
+    text-decoration: none;
+    font-size: 17px;
+    width: 100%;
+}
